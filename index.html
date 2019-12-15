@@ -1,78 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en" id="top">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css">
     <title>Anna Truong</title>
-  </head>
-  <body>
-    <div id="modal01" class="modal" onclick="this.style.display='none'">
-        <span class="close">&times;</span>
-        <img id="img01" class="modal-content">
-    </div>
-    <nav class="top navbar navbar-expand-lg">
-        <div class="navbar-brand">
-          <img src="img/logo.png" width="40" height="40" class="d-inline-block align-top" alt="logo">
-          <span class="navbar-brand mb-0 ml-2 h1 text-light">Anna Truong</span>
+</head>
+<body>
+  <div id="modal01" class="modal" onclick="this.style.display='none'">
+      <span class="close">&times;</span>
+      <img id="img01" class="modal-content">
+  </div>
+  <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="navbar-brand">
+        <img src="img/logo.png" width="40" height="40" class="d-inline-block align-top" alt="logo">
+        <span class="navbar-brand mb-0 ml-2 h1 text-light">Anna Truong</span>
+      </div>
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#top">PROJECTS</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+    <main class="container">
+      <h1 class="mt-4">Projects</h1>
+      <section class="project mt-3 pt-4 pb-4 border-top">
+        <h2>Checklist App</h2><span> - Python, Flask, HTML, Bootstrap</span>
+        <p class="mt-3">The idea for this project came about because I wanted to acquire some knowledge of how back-end programming worked and Flask seemed like a good place to start. 
+          Again, this concept was simple enough for a beginner to understand some of the main principles of back-end web development e.g. how to store and retrieve information from databases. 
+          This project also introduced me to resources such as Bootstrap which made creating a clean and responsive user interface easy to allow more time to focus on the functionality of the app.</p>
+        <p>In order to use the app, users must register via the sign-up form. They can then login to add tasks with a description and due date. 
+          They have options to edit the tasks and delete them after completion. There is also a function which allows users to reset their password.</p>
+        <img src="img/checklist_login.png" width="450" height="400" class="img-responsive img-thumbnail mt-2 mr-2 mb-2" onclick="onClick(this)" alt="checklist app login page">
+        <img src="img/checklist_tasks.png" width="450" height="400" class="img-responsive img-thumbnail mt-2 mr-2 mb-2" onclick="onClick(this)" alt="checklist app tasks page">
+        <img src="img/checklist_add_task.png" width="450" height="400" class="img-responsive img-thumbnail mt-2 mr-2 mb-2" onclick="onClick(this)" alt="checklist app add new task page">
+        <img src="img/checklist_reset_password.png" width="450" height="400" class="img-responsive img-thumbnail mt-2 mr-2 mb-2" onclick="onClick(this)" alt="checklist app reset password page">
+        <div class="links">
+          <a class="btn btn-dark mt-3 mr-2 mb-4 ml-1" target="_blank" href="https://github.com/annatruong/checklist_app" role="button">View On GitHub</a>
+          <a class="btn btn-dark mt-3 mr-2 mb-4 ml-1" target="_blank" href="https://checklist-app01.herokuapp.com/" role="button">View App</a>
         </div>
-        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#about">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#projects">PROJECTS</a>
-              </li>
-            </ul>
+      </section>
+      <section class="project mt-3 pt-4 pb-4 border-top">
+        <h2>Snake Game</h2><span> - Python, Pygame</span>
+        <p class="mt-3">The Snake game was my first coding project. I decided to create my own version of the game as it’s always nice to start with something fun when you are learning how to code. 
+          The project was simple enough for a beginner, but also allowed me to practice what I have learnt from completing a Python online course. The game was developed using the Pygame modules, 
+          using simple shapes that were drawn on to a grid and initialising keyboard controls to navigate the snake.</p>
+        <img src="img/snake_start_screen.png" width="300" height="300" class="img-responsive img-thumbnail mt-2 mr-2 mb-2" onclick="onClick(this)" alt="Snake game start screen">
+        <img src="img/snake_gameplay.png" width="300" height="300" class="img-responsive img-thumbnail mt-2 mr-2 mb-2" onclick="onClick(this)" alt="Snake gameplay">
+        <img src="img/snake_end_screen.png" width="300" height="300" class="img-responsive img-thumbnail mt-2 mr-2 mb-2" onclick="onClick(this)" alt="Snake game over screen">
+        <div class="links">
+          <a class="btn btn-dark mt-3 mr-2 mb-4 ml-1" target="_blank" href="https://github.com/annatruong/pygame-snake" role="button">View On GitHub</a>
         </div>
-      </nav>
-      <main class="container">
-        <h1 id="projects" class="mt-4">Projects</h1>
-        <section class="project mt-3 pt-4 pb-4 border-top">
-          <h2>Checklist App</h2><span> - Python, Flask, HTML, Bootstrap</span>
-          <p class="mt-3">The idea for this project came about because I wanted to acquire some knowledge of how back-end programming worked and Flask seemed like a good place to start. 
-            Again, this concept was simple enough for a beginner to understand some of the main principles of back-end web development e.g. how to store and retrieve information from databases. 
-            This project also introduced me to resources such as Bootstrap which made creating a clean and responsive user interface easy to allow more time to focus on the functionality of the app.</p>
-          <p>In order to use the app, users must register via the sign-up form. They can then login to add tasks with a description and due date. 
-            They have options to edit the tasks and delete them after completion. There is also a function which allows users to reset their password.</p>
-          <img src="img/checklist_login.png" width="450" height="400" class="img-responsive img-thumbnail mt-2 mr-2 mb-2" onclick="onClick(this)">
-          <img src="img/checklist_tasks.png" width="450" height="400" class="img-responsive img-thumbnail mt-2 mr-2 mb-2" onclick="onClick(this)">
-          <img src="img/checklist_add_task.png" width="450" height="400" class="img-responsive img-thumbnail mt-2 mr-2 mb-2" onclick="onClick(this)">
-          <img src="img/checklist_reset_password.png" width="450" height="400" class="img-responsive img-thumbnail mt-2 mr-2 mb-2" onclick="onClick(this)">
-          <a class="btn btn-dark mt-3 mr-2 mb-4 ml-1" target="_blank" href="https://github.com/annatruong/checklist_app">View On GitHub</a>
+      </section>
+    </main>
+    <footer>
+      <section id="about">
+        <h1>About</h1>
+        <p>Hello! My name is Anna and I currently work as an Account Manager at a digital marketing agency. Through the process of finding ways to work efficiently within my role, 
+          I learnt how to automate some of the longer tasks by teaching myself some basic Javascript to be applied to Google App Scripts. I found my love for code again at this point 
+          and went on to learn more in my own time, starting with Python, and revisiting HTML and CSS.</p>
+        <p> Outside of work and coding, you can find me at various cinemas and theatres, attending volunteering events or socialising with other bookworms at the London Silent Book Club.</p>
         </section>
-        <section class="project mt-3 pt-4 pb-4 border-top">
-          <h2>Snake Game</h2><span> - Python, Pygame</span>
-          <p class="mt-3">The Snake game was my first coding project. I decided to create my own version of the game as it’s always nice to start with something fun when you are learning how to code. 
-            The project was simple enough for a beginner, but also allowed me to practice what I have learnt from completing a Python online course. The game was developed using the Pygame modules, 
-            using simple shapes that were drawn on to a grid and initialising keyboard controls to navigate the snake.</p>
-          <img src="img/snake_start_screen.png" width="300" height="300" class="img-responsive img-thumbnail mt-2 mr-2 mb-2" onclick="onClick(this)">
-          <img src="img/snake_gameplay.png" width="300" height="300" class="img-responsive img-thumbnail mt-2 mr-2 mb-2" onclick="onClick(this)">
-          <img src="img/snake_end_screen.png" width="300" height="300" class="img-responsive img-thumbnail mt-2 mr-2 mb-2" onclick="onClick(this)">
-          <a class="btn btn-dark mt-3 mr-2 mb-4 ml-1" target="_blank" href="https://github.com/annatruong/pygame-snake">View On GitHub</a>
-        </section>
-      </main>
-      <footer>
-        <section id="about">
-          <h1>About</h1>
-          <p>Hello! My name is Anna and I currently work as an Account Manager at a digital marketing agency. Through the process of finding ways to work efficiently within my role, 
-            I learnt how to automate some of the longer tasks by teaching myself some basic Javascript to be applied to Google App Scripts. I found my love for code again at this point 
-            and went on to learn more in my own time, starting with Python, and revisiting HTML and CSS.</p>
-          <p> Outside of work and coding, you can find me at various cinemas and theatres, attending volunteering events or socialising with other bookworms at the London Silent Book Club.</p>
-          </section>
-        <aside id="contact">
-          <a class="mr-3" target="_blank" href="https://github.com/annatruong"><img src="img/github_logo.png" width="40" height="40"></a>
-          <a target="_blank" href="https://uk.linkedin.com/in/anna-truong-38143227"><img src="img/linkedin_logo.png" width="40" height="40"></a>
-        </aside>
-      </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
-  </body>
+      <aside id="contact">
+        <a class="mr-3" target="_blank" href="https://github.com/annatruong"><img src="img/github_logo.png" width="40" height="40"></a>
+        <a target="_blank" href="https://uk.linkedin.com/in/anna-truong-38143227"><img src="img/linkedin_logo.png" width="40" height="40"></a>
+      </aside>
+    </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
 </html>

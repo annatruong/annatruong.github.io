@@ -228,11 +228,26 @@ footer {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     header h1 {
         font-size: 20px;
     }
-    
+    .project-screenshot {
+        width: 360px;
+        height: 220px;
+    }
+  }
+
+  @media (max-width: 400px) {
+
+    .project-screenshot {
+        width: 340px;
+        height: 200px;
+    }
+  }
+
+  @media (max-width: 387px) {
+
     .project-screenshot {
         width: 320px;
         height: 180px;

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gupter-bold {
+  font-family: 'Gupter', serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+footer img {
+  width: 20px;
+}
